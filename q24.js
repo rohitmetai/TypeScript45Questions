@@ -1,0 +1,18 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var name = 'ROHIT';
+console.log(name == 'ROHIT');
+console.log(name != 'ROHIT');
+console.log(name.toLowerCase() == 'ROHIT');
+var salary = 10000;
+console.log(salary == 10000);
+console.log(salary != 10000);
+console.log(salary > 10000);
+console.log(salary < 10000);
+console.log(salary >= 10000);
+console.log(salary <= 10000);
+console.log(salary == 10000 && !isNaN(salary));
+console.log(salary == 10000 || salary > 10000);
+var places = ['LAS VEGAS', 'MALDIVES', 'JAPAN', 'NEW YORK', 'CHINA'];
+console.log(places.includes('CHINA'));
+console.log(!places.includes('CHINA'));

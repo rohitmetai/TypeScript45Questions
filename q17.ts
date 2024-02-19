@@ -1,0 +1,45 @@
+
+
+let guests:string[]=['ALICE','BOB','HARRY']
+console.log('HEY '+guests[0]+', I would like to invite you for the dinner');
+console.log('HEY '+guests[1]+', I would like to invite you for the dinner');
+console.log('HEY '+guests[2]+', I would like to invite you for the dinner\n');
+
+console.log(guests[0]+" REPLIED: I CAN'T COME FOR DINNER \n\n");
+guests[0]='CARRY'
+
+console.log('HEY '+guests[0]+', I would like to invite you for the dinner');
+console.log('HEY '+guests[1]+', I would like to invite you for the dinner');
+console.log('HEY '+guests[2]+', I would like to invite you for the dinner\n');
+
+
+console.log('I FOUND A BIGGER DINNING TABLE');
+
+guests.unshift('KARAN')
+guests.push('ARJUN')
+guests.push('RAHUL')
+
+for(let i:number=0;i<guests.length;i++){
+console.log('HEY '+guests[i]+', I would like to invite you for the dinner');
+}
+console.log('\n\n');
+
+console.log('I CAN ONLY INVITE 2 PERSONS FOR DINNER\n\n');
+
+for(let i:number=guests.length-1;i>1;i--){
+    console.log("HEY "+guests[i]+", can not invite you for the dinner ");
+    guests.pop()
+}
+console.log('\n\n');
+
+for(let i:number=0;i<guests.length;i++){
+    console.log('HEY '+guests[i]+', YOU ARE STILL INVITED ');
+}
+console.log('\n\n');
+
+guests.pop() //KARAN REMOVED
+guests.pop() //CARRY REMOVED
+console.log(guests);
+
+
+export{}
